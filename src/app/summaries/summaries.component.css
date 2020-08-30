@@ -1,0 +1,14 @@
+.summaries-component{
+margin: auto;
+max-width: 80%;
+
+}
+
+.summary-card {
+
+  margin: 10px;
+}
+
+.summary-content {
+  margin-left: 40px;
+}
