@@ -5,8 +5,6 @@ import { AppComponent } from './app.component';
 import { SummariesComponent } from './summaries/summaries.component';
 
 import { MatCardModule } from '@angular/material/card';
-import { MatSliderModule } from '@angular/material/slider';
-import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,8 +14,6 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     MatCardModule,
-    NoopAnimationsModule,
-    MatSliderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
