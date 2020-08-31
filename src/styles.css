@@ -2,3 +2,10 @@
 
 html, body { height: 100%; background-color: #eeeeee;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* global variables */
+:root {
+  --primaryColor: #22b3cc;
+  --secondaryColor: #69c9da;
+  --tertiaryColor: #aee9f3;
+}

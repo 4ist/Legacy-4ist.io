@@ -1,0 +1,46 @@
+.header-component {
+  width: 100%;
+  top: 0;
+  padding: 15px;
+  display: table;
+  box-sizing: border-box;
+  color: #eeeeee;
+  background: linear-gradient(
+    to bottom,
+    var(--primaryColor),
+    var(--secondaryColor)
+  );
+}
+.titleGroup {
+  display: table-cell;
+}
+
+.siteName {
+  font-size: 40px;
+}
+
+.siteDescription {
+  font-size: large;
+}
+
+.spacer {
+  font-size: xx-large;
+  margin-inline: 15px;
+}
+
+.linkGroup {
+  display: table-cell;
+  text-align: right;
+  vertical-align: baseline;
+}
+
+.link {
+  margin-right: 10px;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                        supported by Chrome, Edge, Opera and Firefox */
+}

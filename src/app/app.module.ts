@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { SummariesComponent } from './summaries/summaries.component';
 
 import { MatCardModule } from '@angular/material/card';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SummariesComponent
+    SummariesComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
