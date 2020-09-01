@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { DevBlog } from '../models/dev-blog';
-import { DataLoaderService } from '../services/data-loader.service';
+import { DevBlog } from '../../models/dev-blog';
+import { DataLoaderService } from '../../services/data-loader.service';
 
 @Component({
   selector: 'app-dev-blogs',
