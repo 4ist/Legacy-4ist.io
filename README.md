@@ -4,8 +4,6 @@ This site will serve as my personal development site. The purpose is for me to b
 
 Currently there is a "summary list" page (which was intended to be a list of project summaries), but the current implementation looks more like a dev blog so I'll convert it into that.
 
----
-
 ## Site Feature Goals
 - ViewProject page - A page to show an overview/writeup for a project 
   - One page in code that populates a writeup for any project based on data pulled from the DB. Would markdown be the easiest format to implement?
