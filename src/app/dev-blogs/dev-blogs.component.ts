@@ -17,4 +17,17 @@ export class DevBlogsComponent implements OnInit {
     this.devBlogs = this.dataLoaderService.getDevBlogs();
   }
 
+  getFormattedDate(date: Date): String{
+    if (date != null){
+      const ye: String = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(date);
+      const mo: String = new Intl.DateTimeFormat('en', { month: 'long' }).format(date);
+      const da: String = new Intl.DateTimeFormat('en', { day: 'numeric' }).format(date);
+      const formattedDate: String = `${da} ${mo} ${ye}`;
+      return formattedDate;
+    }
+    else{
+      return "date not set";
+    }
+  }
+
 }

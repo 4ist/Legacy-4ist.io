@@ -6,7 +6,7 @@
     -->
 
       <mat-card-title>{{ devBlog.title }}</mat-card-title>
-      <mat-card-subtitle>{{ devBlog.date }}</mat-card-subtitle>
+      <mat-card-subtitle>{{ getFormattedDate(devBlog.date) }}</mat-card-subtitle>
     </mat-card-header>
     <!--
     <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
