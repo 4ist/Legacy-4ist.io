@@ -2,7 +2,7 @@
 
 This site will serve as my personal development site. The purpose is for me to be able to share my projects in one place, as GitHub can be intimidating for inexperienced and/or non-technical folks.
 
-Presently there is a "summary list" page (which was intended to be a list of project summaries), but the current implementation looks more like a dev blog so I'll convert it into that.
+Currently there is a "summary list" page (which was intended to be a list of project summaries), but the current implementation looks more like a dev blog so I'll convert it into that.
 
 ---
 
