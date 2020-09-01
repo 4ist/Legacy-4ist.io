@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { SummariesComponent } from './summaries/summaries.component';
+import { DevBlogsComponent } from './dev-blogs/dev-blogs.component';
 
 import { MatCardModule } from '@angular/material/card';
 import { HeaderComponent } from './header/header.component';
@@ -10,7 +10,7 @@ import { HeaderComponent } from './header/header.component';
 @NgModule({
   declarations: [
     AppComponent,
-    SummariesComponent,
+    DevBlogsComponent,
     HeaderComponent
   ],
   imports: [

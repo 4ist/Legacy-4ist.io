@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Summary } from '../models/summary';
-import { StubSummaries } from './stub-summaries';
+import { DevBlog } from '../models/dev-blog';
+import { StubDevBlogs } from './stub-dev-blogs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,7 +8,7 @@ import { StubSummaries } from './stub-summaries';
 export class DataLoaderService {
 
   constructor() { }
-   getSummaries(): Summary[]{
-    return StubSummaries;
+   getDevBlogs(): DevBlog[]{
+    return StubDevBlogs;
   }
 }

@@ -1,6 +1,6 @@
-export class Summary {
+export class DevBlog {
   title: String;
   date: Date;
-  summary: String;
+  body: String;
   imageURL?: String;
 }

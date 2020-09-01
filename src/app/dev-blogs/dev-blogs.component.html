@@ -1,0 +1,18 @@
+<div class="dev-blogs-component">
+  <mat-card class="dev-blog-card" *ngFor="let devBlog of devBlogs">
+    <mat-card-header>
+      <!--
+     <div mat-card-avatar class="example-header-image"></div>
+    -->
+
+      <mat-card-title>{{ devBlog.title }}</mat-card-title>
+      <mat-card-subtitle>{{ devBlog.date }}</mat-card-subtitle>
+    </mat-card-header>
+    <!--
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  -->
+    <mat-card-content class="dev-blog-content">
+      <p>{{ devBlog.body }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>

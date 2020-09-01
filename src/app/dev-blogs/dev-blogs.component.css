@@ -1,14 +1,14 @@
-.summaries-component{
+.dev-blogs-component{
 margin: auto;
 max-width: 80%;
 
 }
 
-.summary-card {
+.dev-blog-card {
 
   margin: 10px;
 }
 
-.summary-content {
+.dev-blog-content {
   margin-left: 40px;
 }
