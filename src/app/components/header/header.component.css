@@ -1,9 +1,11 @@
 .header-component {
+ /* TODO: make a less gimicky header. I put too much time into fooling with
+          CSS and it just isn't worth it until I add more to the site. */
+
   width: 100%;
   top: 0;
-  padding: 15px;
-  display: table;
-  box-sizing: border-box;
+  position: sticky;
+  z-index: 10;
   color: #eeeeee;
   background: linear-gradient(
     to bottom,
@@ -17,8 +19,17 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently
                         supported by Chrome, Edge, Opera and Firefox */
-
 }
+
+.header {
+  top: 0;
+  padding: 15px;
+  width: 100%;
+  display: table;
+
+  z-index: 10;
+}
+
 .titleGroup {
   display: table-cell;
 }
@@ -48,4 +59,8 @@
 
 .link:hover {
   filter: drop-shadow(0px 0px 10px grey);
+}
+
+.banner {
+  position: relative;
 }
