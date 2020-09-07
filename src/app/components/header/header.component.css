@@ -2,11 +2,9 @@
  /* TODO: make a less gimicky header. I put too much time into fooling with
           CSS and it just isn't worth it until I add more to the site. */
 
-  width: 100%;
   top: 0;
-  position: sticky;
-  z-index: 10;
   color: #eeeeee;
+  padding: 15px;
   background: linear-gradient(
     to bottom,
     var(--primaryColor),
@@ -22,12 +20,9 @@
 }
 
 .header {
-  top: 0;
-  padding: 15px;
+
   width: 100%;
   display: table;
-
-  z-index: 10;
 }
 
 .titleGroup {
