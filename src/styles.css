@@ -5,6 +5,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* global variables */
 :root {
+  --heavyColor: #008899;
   --primaryColor: #22b3cc;
   --secondaryColor: #69c9da;
   --tertiaryColor: #aee9f3;
