@@ -1,0 +1,49 @@
+.background{
+  background-image: url('../../../assets/CyanCodeBG.jpeg');
+  background-repeat: no-repeat;
+   background-size: cover;
+   height: 40%;
+
+
+}
+
+.aboutBanner {
+  width: 100%;
+  margin: auto;
+}
+/*git commit -m "added images and rough structure to home page content"*/
+.picHolder{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+}
+.profilePicture {
+  width: 300px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 5px grey);
+  margin: 20px;
+
+}
+
+.title{
+display: inline-block;
+vertical-align: top;
+margin-top: 50px;
+height: 100%;
+color: #eeeeee;
+}
+
+.aboutContents {
+  width: 100%;
+  text-align: center;
+}
+
+.card {
+  max-width: 40%;
+  text-align: left;
+  display: inline-block;
+  margin: 20px;
+  vertical-align: top;
+  padding: 10px;
+}
