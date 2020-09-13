@@ -3,8 +3,6 @@
   background-repeat: no-repeat;
    background-size: cover;
    height: 40%;
-
-
 }
 
 .aboutBanner {
@@ -46,4 +44,22 @@ color: #eeeeee;
   margin: 20px;
   vertical-align: top;
   padding: 10px;
+}
+
+.devicon{
+font-size: 48px;
+text-align: center;
+margin: 10px;
+display: inline-block;
+}
+
+.iconLabel{
+  font-size: 14px;
+  text-align: center;
+}
+
+.technologiesSection{
+  margin-top: 15px;
+  font-size: 16px;
+
 }
