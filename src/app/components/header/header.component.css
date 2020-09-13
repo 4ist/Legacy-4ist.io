@@ -35,14 +35,18 @@
   height: 45px;
 }
 
-a {
+a{
+  text-decoration: none;
+  color: #eeeeee;
+}
+.bannerLink {
   padding: 3px 6px;
   margin: 0px 3px;
   background: none;
   border-radius: 15px;
 }
 
-a:hover {
+.bannerLink:hover {
   background-color: var(--heavyColor);
 }
 
@@ -57,12 +61,11 @@ a:hover {
 
 .socialLink {
   margin-right: 10px;
+  font-size: 32px;
+
 }
 
 .socialLink:hover {
   filter: drop-shadow(0px 0px 10px grey);
 }
 
-.pageGroup {
-  display: table-cell;
-}
