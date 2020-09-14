@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FileReaderService } from '../../services/file-reader.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  bioParagraphs : String[];
+
+  constructor(private fileReaderService : FileReaderService) { }
 
   ngOnInit(): void {
+    this.bioParagraphs = this.fileReaderService.GetBioParagraphs();
   }
 
 }
