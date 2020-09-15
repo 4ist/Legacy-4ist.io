@@ -13,7 +13,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@master/devicon.min.css">
 </header>
 
-<!--my face, in a circle with some webdev background picture-->
 <div class="background">
   <div id="AboutBanner" class="aboutBanner">
     <div class="picHolder">
@@ -26,110 +25,108 @@
   </div>
 </div>
 
-<!--a little bitta aboutme content-->
+<div class="contents">
+  <mat-card id="Bio" class="card">
+    <mat-card-header>
+      <mat-card-title>About Me</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div  *ngFor="let paragraph of bioParagraphs">
+        <p>{{ paragraph }}</p>
+      </div>
+    </mat-card-content>
+  </mat-card>
 
-<mat-card id="Bio" class="card">
-  <mat-card-header>
-    <mat-card-title>About Me</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <div  *ngFor="let paragraph of bioParagraphs">
-      <p>{{ paragraph }}</p>
-    </div>
-  </mat-card-content>
-</mat-card>
+  <!--
+  Commenting these out to deploy
+    <mat-card-header>
+      <mat-card-title>links</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <div>4ist.net</div>
+      <div>github.com</div>
+      <div>linkedin</div>
+    </mat-card-content>
+  </mat-card>
+  -->
 
-<!--add some projects or something?-->
+  <mat-card id="Technologies" class="card">
+    <mat-card-header>
+      <mat-card-title>Technologies</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
 
-<!--link to github, linkedin, resume-->
+      <div class="technologiesSection">Professional</div>
 
-<mat-card id="Links" class="card">
-  <mat-card-header>
-    <mat-card-title>links</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
-    <div>4ist.net</div>
-    <div>github.com</div>
-    <div>linkedin</div>
-  </mat-card-content>
-</mat-card>
+      <div class="devicon">
+        <i class="devicon-csharp-plain"></i>
+        <div class="iconLabel">C#</div>
+      </div>
 
-<mat-card id="Technologies" class="card">
-  <mat-card-header>
-    <mat-card-title>Technologies</mat-card-title>
-  </mat-card-header>
-  <mat-card-content>
+      <div class="devicon">
+        <i class="devicon-dot-net-plain"></i>
+        <div class="iconLabel">ASP.NET</div>
+      </div>
 
-    <div class="technologiesSection">Professional</div>
+      <div class="devicon">
+        <i class="devicon-git-plain"></i>
+        <div class="iconLabel">Git</div>
+      </div>
 
-    <div class="devicon">
-      <i class="devicon-csharp-plain"></i>
-      <div class="iconLabel">C#</div>
-    </div>
+      <div class="devicon">
+        <i class="devicon-html5-plain"></i>
+        <div class="iconLabel">HTML</div>
+      </div>
 
-    <div class="devicon">
-      <i class="devicon-dot-net-plain"></i>
-      <div class="iconLabel">ASP.NET</div>
-    </div>
+      <div class="devicon">
+        <i class="devicon-css3-plain"></i>
+        <div class="iconLabel">CSS</div>
+      </div>
 
-    <div class="devicon">
-      <i class="devicon-git-plain"></i>
-      <div class="iconLabel">Git</div>
-    </div>
+      <div class="devicon">
+        <i class="devicon-javascript-plain"></i>
+        <div class="iconLabel">JavaScript</div>
+      </div>
 
-    <div class="devicon">
-      <i class="devicon-html5-plain"></i>
-      <div class="iconLabel">HTML</div>
-    </div>
+      <div class="technologiesSection">Proficient</div>
 
-    <div class="devicon">
-      <i class="devicon-css3-plain"></i>
-      <div class="iconLabel">CSS</div>
-    </div>
+      <div class="devicon">
+        <i class="devicon-angularjs-plain"></i>
+        <div class="iconLabel">Angular</div>
+      </div>
 
-    <div class="devicon">
-      <i class="devicon-javascript-plain"></i>
-      <div class="iconLabel">JavaScript</div>
-    </div>
+      <div class="devicon">
+        <i class="devicon-typescript-plain"></i>
+        <div class="iconLabel">TypeScript</div>
+      </div>
 
-    <div class="technologiesSection">Proficient</div>
+      <div class="devicon">
+        <i class="devicon-nodejs-plain"></i>
+        <div class="iconLabel">NodeJS</div>
+      </div>
 
-    <div class="devicon">
-      <i class="devicon-angularjs-plain"></i>
-      <div class="iconLabel">Angular</div>
-    </div>
+      <div class="technologiesSection">Familiar</div>
 
-    <div class="devicon">
-      <i class="devicon-typescript-plain"></i>
-      <div class="iconLabel">TypeScript</div>
-    </div>
+      <div class="devicon">
+        <i class="devicon-python-plain"></i>
+        <div class="iconLabel">Python</div>
+      </div>
 
-    <div class="devicon">
-      <i class="devicon-nodejs-plain"></i>
-      <div class="iconLabel">NodeJS</div>
-    </div>
+      <div class="devicon">
+        <i class="devicon-java-plain"></i>
+        <div class="iconLabel">Java</div>
+      </div>
 
-    <div class="technologiesSection">Familiar</div>
-
-    <div class="devicon">
-      <i class="devicon-python-plain"></i>
-      <div class="iconLabel">Python</div>
-    </div>
-
-    <div class="devicon">
-      <i class="devicon-java-plain"></i>
-      <div class="iconLabel">Java</div>
-    </div>
-
-    <div class="devicon">
-      <i class="devicon-mongodb-plain"></i>
-      <div class="iconLabel">MongoDB</div>
-    </div>
+      <div class="devicon">
+        <i class="devicon-mongodb-plain"></i>
+        <div class="iconLabel">MongoDB</div>
+      </div>
 
 
 
 
-  </mat-card-content>
-</mat-card>
+    </mat-card-content>
+  </mat-card>
+</div>
 
 <!--copyright footer-->
