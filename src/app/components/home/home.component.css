@@ -1,8 +1,8 @@
 .background{
   background-image: url('../../../assets/CyanCodeBG.jpeg');
   background-repeat: no-repeat;
-   background-size: cover;
-   height: 40%;
+  background-size: cover;
+  height: 350px;
 }
 
 .aboutBanner {

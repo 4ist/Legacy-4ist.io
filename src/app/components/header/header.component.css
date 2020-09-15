@@ -2,7 +2,7 @@
   top: 0;
   color: #eeeeee;
 
-  height: 78px;
+  height: 68px;
   background: linear-gradient(
     to bottom,
     var(--primaryColor),
@@ -18,7 +18,7 @@
 }
 
 .siteName {
-  padding: 15px;
+  padding:  10px 15px;
   background-color: var(--heavyColor);
   display: flex;
   align-items: flex-end;
@@ -27,7 +27,7 @@
 }
 
 .banner {
-  padding: 15px;
+  padding:  10px 15px;
   margin-left: 15px;
   display: flex;
   align-items: flex-end;
@@ -44,6 +44,7 @@ a{
   margin: 0px 3px;
   background: none;
   border-radius: 15px;
+  font-size: 20px;
 }
 
 .bannerLink:hover {
@@ -51,7 +52,7 @@ a{
 }
 
 .linkGroup {
-  padding: 15px;
+  padding:  10px 15px;
   height: 40px;
   float: right;
   text-align: right;
