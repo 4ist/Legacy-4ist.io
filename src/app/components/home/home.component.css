@@ -43,7 +43,21 @@ color: #eeeeee;
   display: inline-block;
   margin: 20px;
   vertical-align: top;
-  padding: 10px;
+  padding: 0px;
+}
+
+.card > mat-card-header{
+  background: linear-gradient(
+    to bottom,
+    var(--primaryColor),
+    var(--secondaryColor)
+  );
+  color: #eeeeee;
+  padding-top: 10px;
+}
+
+.card > mat-card-content{
+  padding: 16px; /* this is exactly 16 to line up with the header*/
 }
 
 .devicon{
