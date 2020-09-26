@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { DevBlog } from '../../models/dev-blog';
 import { DataLoaderService } from '../../services/data-loader.service';
+import { stringify } from '@angular/compiler/src/util';
 
 @Component({
   selector: 'app-dev-blogs',
@@ -10,23 +11,37 @@ import { DataLoaderService } from '../../services/data-loader.service';
 export class DevBlogsComponent implements OnInit {
 
   devBlogs: DevBlog[];
+  months : string[] = ["January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December"];
 
   constructor(private dataLoaderService: DataLoaderService) { }
 
   ngOnInit(): void {
-    this.devBlogs = this.dataLoaderService.getDevBlogs();
+    this.dataLoaderService.getDevBlogs()
+      .subscribe((devBlogs) => {
+        this.devBlogs = devBlogs.sort((a, b) =>
+          b.date.valueOf() > a.date.valueOf() ? 1 : -1
+        );
+      });
+
   }
 
   getFormattedDate(date: Date): String{
     if (date != null){
-      const ye: String = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(date);
-      const mo: String = new Intl.DateTimeFormat('en', { month: 'long' }).format(date);
-      const da: String = new Intl.DateTimeFormat('en', { day: 'numeric' }).format(date);
-      const formattedDate: String = `${da} ${mo} ${ye}`;
+
+      var dateComponents : string[] = date.toString().split('T')[0].split('-'); //2020-09-22T04:00:00.000Z
+
+      const year : string = dateComponents[0];
+
+      const monthInt = parseInt(dateComponents[1]);
+      const fullMonth : string = this.months[monthInt - 1];
+      const day : string = dateComponents[2];
+
+      const formattedDate: String = `${day} ${fullMonth} ${year}`;
       return formattedDate;
     }
     else{
-      return "date not set";
+      return '';
     }
   }
 
