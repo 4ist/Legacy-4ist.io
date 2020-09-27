@@ -3,18 +3,18 @@ import { DevBlog } from '../models/dev-blog';
 import { StubDevBlogs } from './stub-dev-blogs';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import * as config from '../../config.json';
 
 @Injectable({
   providedIn: 'root',
 })
 
 export class DataLoaderService {
-  response;
-  //constructor() {}
+  backendServiceEndpoint = config.endpoints.backendServiceEndpoint;
   constructor(private http: HttpClient) {}
 
   getDevBlogs():Observable<DevBlog[]> {
 
-    return this.http.get<DevBlog[]>('http://localhost:3001/api/DevBlogs');
+    return this.http.get<DevBlog[]>(`${this.backendServiceEndpoint}api/DevBlogs`);
   }
 }
