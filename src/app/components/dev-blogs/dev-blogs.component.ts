@@ -23,7 +23,6 @@ export class DevBlogsComponent implements OnInit {
           b.date.valueOf() > a.date.valueOf() ? 1 : -1
         );
       });
-
   }
 
   getFormattedDate(date: Date): String{
