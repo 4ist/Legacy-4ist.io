@@ -11,6 +11,8 @@ const devBlogSchema = new mongoose.Schema({
     imageURL: String
 });
 
+const BioModel = mongoose.model('Bio', new mongoose.Schema({body: String}));
+
 const DevBlogModel = mongoose.model('DevBlog', devBlogSchema);
 
 export class DataService{
@@ -55,5 +57,28 @@ export class DataService{
         this.disconnect();
 
         return devBlogs;
+    }
+
+    public async getBio(){
+        this.connect();
+        const bio = await BioModel.find({});
+        this.disconnect();
+
+        return bio;
+    }
+
+    
+    public postBio(bio: string){
+        this.connect();
+
+        const bioDBModel = new BioModel({
+            body: bio
+        })
+
+        bioDBModel.save().then(result => {
+        console.log('bio saved!')
+
+        this.disconnect();
+        })
     }
 }

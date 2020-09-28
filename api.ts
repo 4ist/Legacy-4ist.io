@@ -19,6 +19,13 @@ export class API {
       res.send(devBlogsJSON);
     });
 
+    app.get("/api/Bio", async (req, res) => {
+      const bio = await this.dataService.getBio();
+      var bioJSON = JSON.parse(JSON.stringify(bio));
+
+      res.send(bioJSON);
+    });
+
     const PORT = 3001;
     app.listen(PORT, () => {
       console.log(`Server running on port ${PORT}`);

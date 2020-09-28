@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "name": "4ist-service",
+      "exec_mode": "cluster",
+      "instances": "max",
+      "script": "./lib/server.ts",
+      "interpreter": "ts-node"
+    }
+  ]
+}
