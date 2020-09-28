@@ -15,6 +15,12 @@ export class DataLoaderService {
 
   getDevBlogs():Observable<DevBlog[]> {
 
-    return this.http.get<DevBlog[]>(`${this.backendServiceEndpoint}api/DevBlogs`);
+    return this.http.get<DevBlog[]>(`${this.backendServiceEndpoint}/api/DevBlogs`);
   }
+
+  getBio():Observable<DevBlog[]> {
+
+    return this.http.get<DevBlog[]>(`${this.backendServiceEndpoint}/api/Bio`);
+  }
+
 }
