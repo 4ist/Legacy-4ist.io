@@ -8,13 +8,14 @@ The following components make up this project:
 - Front-end: Angular
   - Splash page - A personal overview.
   - Dev Blogs - Logged entries to track my side development work.
+  - Self-hosted on my VPS.
 - Back-end: NodeJS
   - Exposes an API that makes database requests.
   - Written in typescript.
+  - Self-hosted on my VPS.
 - Database: MongoDB
   - Data storage. Currently development blogs are being stored here so the entries can be dynamically populated without code changes.
-
-The front and back ends are being hosted on my virtual private server, and the database in the MongoDB Atlas cloud database.
+  - Hosted in the MongoDB Atlas cloud database.
 
 The front and back ends are currently in separate repositories, they will be merged in the near future.
 
