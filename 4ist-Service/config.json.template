@@ -1,0 +1,11 @@
+{
+    "credentials" : {
+        "mongo" : {
+            "cluster": "",
+            "database": "",
+            "username": "",
+            "password": "",
+            "options": ""
+        }
+    }
+}
