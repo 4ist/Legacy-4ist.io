@@ -13,6 +13,8 @@ export class API {
 
   setupRoutes(): void {
     app.get("/api/DevBlogs", async (req, res) => {
+      console.log(req);
+      
       const devBlogs = await this.dataService.getDevBlogs();
       var devBlogsJSON = JSON.parse(JSON.stringify(devBlogs));
 
