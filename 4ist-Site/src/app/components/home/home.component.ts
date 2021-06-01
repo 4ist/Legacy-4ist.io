@@ -16,13 +16,13 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     this.bio =
-`Hello, my name is Forrest Richardson and I love building software.
+`Hello, my name is Forrest Richardson - I love building things, solving complex problems, and leading people to do the same.
 
-I work full-time as a software engineer at FIS Global and part-time as a Network Operations officer (25A) in the Army National Guard.
+These passions lend themselves to my main career focus of software engineering - I have worked for about two years in a full-stack role on an agile team and recently moved to a DevOps role on a systems team with a focus on CI/CD optimization.
 
-In my current role I work on a full-stack application utilizing C# and the ASP.NET framework. On the personal side I have been exploring other development stacks; my recent projects (including this site) have been in the Angular and NodeJS frameworks with MongoDB databases.
+I am a part-time Signal Officer/Platoon Leader in the Army National Guard which gives me the opportunity to lead soldiers and serve my country.`
 
-This site's purpose is to serve as a platform for me to formally document my side projects; this site is my current side project so expect the content to be pretty meta.`
+
 
     /*
     // I was experimenting with loading the bio from the database, but the load time added too much friction. Is reading this from JSON really my best option besides hardcoding it?
