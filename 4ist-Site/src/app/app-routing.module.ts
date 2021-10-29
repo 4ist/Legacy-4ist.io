@@ -5,10 +5,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
-  //{ path: 'DevBlogs', component: DevBlogsComponent }
-  { path: '', component: HomeComponent },
-  { path: 'DevBlogs', component: DevBlogsComponent },
-  { path: 'Projects', component: ProjectsComponent }
+  { path: '', component: HomeComponent }
+  // { path: 'DevBlogs', component: DevBlogsComponent }, // Disabled while not maintained
+  // { path: 'Projects', component: ProjectsComponent }  // Disabled while not maintained
 ];
 
 @NgModule({
