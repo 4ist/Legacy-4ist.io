@@ -1,8 +1,8 @@
-# 4ist.net
+# 4ist.io
 
-[4ist.net](https://4ist.net)
+[4ist.io](https://4ist.io)
 
-This site will serve as my personal development site. The purpose is for me to be able to share my projects in one place, as GitHub can be intimidating for inexperienced and/or non-technical folks.
+This site will serve as my personal development site. The purpose is to serve as a digital profile and share my projects in one place.
 
 The following components make up this project:
 - Front-end: Angular
@@ -20,8 +20,9 @@ The following components make up this project:
 The front and back ends are currently in separate repositories, they will be merged in the near future.
 
 ## Feature Goals
+- Authentication 
+- Control of my self-hosted services
 - Admin page - Site management controls that don't require code changes, ex: adding a dev blog.
   - This will require the implementation of an authentication protocol or framework, as only I should be able to make site changes.
-
 - Projects pages - Similar to dev blogs, I would like to list the projects I work on in one place. This feature is lower priority thatn the admin page.
 
