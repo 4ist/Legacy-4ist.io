@@ -2,14 +2,14 @@
 
 html, body {
   height: 100%;
-  background-color: #eeeeee;
+  background-color: #131516;
 }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* global variables */
 :root {
-  --heavyColor: #008899;
-  --primaryColor: #22b3cc;
-  --secondaryColor: #69c9da;
-  --tertiaryColor: #aee9f3;
+  --heavyColor: #006d7a;
+  --primaryColor: #1b8fa3;;
+  --secondaryColor: #207483;
+  --tertiaryColor: #aee9f3; /* Not used at the moment */
 }
